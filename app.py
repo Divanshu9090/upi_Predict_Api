@@ -4,8 +4,8 @@ import pandas as pd
 
 app = Flask(__name__)
 
-model = joblib.load("model/xgboost.pkl")
-features = joblib.load("model/features.pkl")
+model = joblib.load("./model/xgboost.pkl")
+features = joblib.load("./model/features.pkl")
 
 @app.route("/")
 def home():
